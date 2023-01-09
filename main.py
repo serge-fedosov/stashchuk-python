@@ -1,3 +1,6 @@
-import datetime
+import requests
 
-print(datetime.MAXYEAR)
+r = requests.get('https://www.python.org')
+
+print(r.text)
+print(r.status_code)
